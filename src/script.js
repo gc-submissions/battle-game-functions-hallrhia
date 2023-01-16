@@ -2,7 +2,6 @@
 
 let randomDamage = () => { return Math.floor(Math.random() * 10) + 1}
 
-
 let chooseOption = (opt1, opt2) => {
     let randNum = Math.floor((Math.random() * 2));
     return randNum === 0 ? opt1 : opt2;
@@ -18,7 +17,7 @@ let logHealth = (player, health) => { console.log(`${player} health: ${health}`)
 
 let logDeath = (winner, loser) => { console.log(`${winner} defeated ${loser}`)};
 
-let isDead = (health) => {return health <= 0 ? true : false};
+let isDead = (health) => { return health <= 0 ? true : false};
 
 function fight(player1, player2, player1Health, player2Health){
     
